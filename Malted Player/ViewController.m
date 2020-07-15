@@ -102,6 +102,7 @@
 
 - (void)viewDidDisappear {
     [super viewDidDisappear];
+    fclose(fd);
 //    [self.avPlayer.player pause];
 //    self.avPlayer.player = nil;
     [self.avPlayer.player replaceCurrentItemWithPlayerItem:nil];
